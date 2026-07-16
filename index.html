@@ -1,401 +1,135 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>ASD</title>
-
-    <link rel="icon" href="logotipop.png">
-
-    <link rel="stylesheet" href="style.css">
-
-    <link
-    rel="stylesheet"
-    href="https://unpkg.com/aos@2.3.1/dist/aos.css"
-/>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Seguridad digital, videovigilancia, automatización y energía solar en Baja California.">
+  <title>ASD | Asesores en Seguridad Digital</title>
+  <link rel="icon" href="logotipop.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="refinements.css">
 </head>
-<!--update May/21/2026-->
-<!-- CONTENIDO -->
 <body>
-    <nav class="navbar">
-
-    <div class="nav-logo">
-        ASD
+  <nav class="navbar">
+    <a class="brand" href="#inicio" aria-label="ASD, inicio"><img src="LogoTitulo.png" alt="ASD Asesores en Seguridad Digital"></a>
+    <div class="nav-actions">
+    <div class="nav-links" id="navLinks">
+      <a href="#soluciones">Soluciones</a>
+      <a href="#metodo">Cómo trabajamos</a>
+      <a href="#contacto">Contacto</a>
+      <a class="nav-cta" href="https://wa.me/526642042871?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n" target="_blank" rel="noopener">Solicitar asesoría</a>
     </div>
-
-    <!-- BOTON HAMBURGUESA -->
-
-    <div class="menu-toggle" id="menuToggle">
-        <span></span>
-        <span></span>
-        <span></span>
+    <button class="language-toggle" id="languageToggle" type="button" aria-label="Cambiar idioma a inglés"><span class="active">ES</span><i></i><span>EN</span></button>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
     </div>
+  </nav>
 
-    <ul class="nav-links">
-
-        <li>
-            <a href="#inicio">Inicio</a>
-        </li>
-
-        <li>
-            <a href="#servicios">Servicios</a>
-        </li>
-
-        <li>
-            <a href="#beneficios">¿Por qué elegirnos?</a>
-        </li>
-
-        <li>
-            <a href="#galeria">Galería</a>
-        </li>
-
-        <li>
-            <a href="#contactar">Contacto</a>
-        </li>
-
-    </ul>
-
-</nav>
-
+  <main>
     <header class="hero" id="inicio">
-
-    <div class="overlay" data-aos="zoom-in">
-
-        <img src="LogoTitulo.png" alt="Logo Prosolar" class="logo">
-
-        <div class="hero-text">
-    <p>
-        Expertos en instalación y mantenimiento de sistemas de seguridad digital y 
-        paneles solares en Baja California. Ofrecemos soluciones profesionales en 
-        cámaras de vigilancia, control de acceso, cableado estructurado, 
-        porteros inteligentes, automatización y energía solar para hogares y negocios.
-    </p>
-    </div>
-
-        <button id="mostrarContacto">
-            Contáctanos
-        </button>
-
-        <div id="contacto" class="contacto">
-
-    <h2>Información de Contacto</h2>
-
-    <p>
-        📧 Correo: <a href="mailto:microplazita@gmail.com" class="link-red">microplazita@gmail.com</a>
-    </p>
-
-    <p>
-        📱 WhatsApp: <a href="https://wa.me/526641756806" target="_blank" class="link-red">664 204 2871</a>
-    </p>
-
-    </div>
-
+      <div class="hero-bg"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-content reveal">
+        <div class="status"><i></i> Soluciones activas 24/7</div>
+        <h1>Seguridad que ves.<br><span>Control que sientes.</span></h1>
+        <p>Integramos videovigilancia, control de acceso, redes, automatización y energía solar para proteger y optimizar hogares y empresas.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="https://wa.me/526642042871?text=Hola%2C%20quiero%20una%20asesor%C3%ADa%20para%20mi%20proyecto" target="_blank" rel="noopener">Hablar con un asesor <b>↗</b></a>
+          <a class="secondary-link" href="#soluciones">Explorar soluciones <span>↓</span></a>
+        </div>
+      </div>
+      <div class="system-panel reveal">
+        <div class="panel-head"><span>ASD / SYSTEM</span><span class="online">ONLINE</span></div>
+        <div class="metric"><div><span>Monitoreo</span><strong>24 / 7</strong></div><i class="pulse"></i></div>
+        <div class="panel-items"><span><i></i>CCTV conectado</span><span><i></i>Acceso protegido</span><span><i></i>Red estable</span></div>
+      </div>
+      <div class="scroll-cue">DESCUBRE <span></span></div>
     </header>
 
-    <!-- SERVICIOS -->
-
-    <section class="servicios" id="servicios">
-
-    <h2>Nuestros Servicios</h2>
-
-    <div class="contenedor-servicios">
-
-        <div class="tarjeta" data-aos="fade-up" data-aos-delay="100">
-
-            <h3>🏢 Residencial</h3>
-
-            <ul class="servicio-lista">
-                
-                <li>🎦 Cámaras para hogar</li>
-                <li>📹 Videoporteros inteligentes</li>
-                <li>🚨 Alarmas de seguridad</li>
-                <li>👨‍💻 Automatización</li>
-                <li>🌞 Paneles solares</li>
-
-            </ul>
-
-        </div>
-
-        <div class="tarjeta" data-aos="fade-up" data-aos-delay="200">
-
-            <h3>🌎 Comercial</h3>
-
-            <ul class="servicio-lista">
-                <li>🔐 Control de acceso</li>
-                <li>📡 CCTV empresarial</li>
-                <li>🌐 Cableado estructurado</li>
-                <li>🖥️ Monitoreo multisucursal</li>
-                <li>⚡ Instalación de paneles solares</li>
-            </ul>
-
-        </div>
-
-        <div class="tarjeta" data-aos="fade-up" data-aos-delay="300">
-
-            <h3>🔧 Soporte Técnico</h3>
-
-            <ul class="servicio-lista">
-                <li>🛠️ Mantenimiento preventivo</li>
-                <li>📲 Configuración remota</li>
-                <li>⚙️ Diagnóstico y reparación</li>
-                <li>🔄 Actualizacion de sistemas</li>
-                <li>☀️ Mantenimiento de paneles solares</li>
-            </ul>
-
-        </div>
-
-    </div>
-
-</section>
-
-    <!-- BENEFICIOS -->
-
-    <section class="beneficios" id="beneficios">
-
-    <h2>¿Por qué elegirnos?</h2>
-
-    <div class="contenedor-beneficios">
-
-        <div class="beneficio" data-aos="fade-up" data-aos-delay="100">
-
-            <h3>🔒 Protección 24/7</h3>
-
-            <p>
-                Monitorea y protege tu hogar o negocio en todo momento desde cualquier lugar.
-            </p>
-
-        </div>
-
-        <div class="beneficio" data-aos="fade-up" data-aos-delay="200">
-
-            <h3>🌎 Acceso Remoto</h3>
-
-            <p>
-                Controla cámaras y sistemas de seguridad directamente desde tu celular.
-            </p>
-
-        </div>
-
-        <div class="beneficio" data-aos="fade-up" data-aos-delay="300">
-
-            <h3>🔋 Ahorro en Energía</h3>
-
-            <p>
-                Reduce significativamente tu consumo eléctrico con soluciones solares eficientes y modernas.
-            </p>
-
-        </div>
-
-        <div class="beneficio" data-aos="fade-up" data-aos-delay="400">
-
-            <h3>⚡ Energía Sustentable</h3>
-
-            <p>
-                Aprovecha energía limpia y renovable para disminuir costos y cuidar el medio ambiente.
-            </p>
-
-        </div>
-
-        <div class="beneficio" data-aos="fade-up" data-aos-delay="500">
-
-            <h3>🛠️ Instalación Profesional</h3>
-
-            <p>
-                Equipos correctamente instalados y configurados para garantizar rendimiento y seguridad.
-            </p>
-
-        </div>
-
-        <div class="beneficio" data-aos="fade-up" data-aos-delay="600">
-
-            <h3>💻 Tecnología Moderna</h3>
-
-            <p>
-                Trabajamos con sistemas inteligentes, automatización y tecnología actualizada.
-            </p>
-
-        </div>
-
-        <div class="beneficio" data-aos="fade-up" data-aos-delay="700">
-
-            <h3>👨‍💻 Atención Personalizada</h3>
-
-            <p>
-                Soluciones adaptadas a las necesidades específicas de cada cliente y proyecto.
-            </p>
-
-        </div>
-
-        <div class="beneficio" data-aos="fade-up" data-aos-delay="800">
-
-            <h3>🔧 Soporte y Mantenimiento</h3>
-
-            <p>
-                Seguimiento técnico y mantenimiento para asegurar el correcto funcionamiento de cada sistema.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-        <!-- GALERIA -->
-    <section class="galeria" id="galeria">
-
-    <h2>Nuestras Instalaciones</h2>
-
-    <div class="contenedor-galeria">
-
-        <img src="img/foto1.jpeg"
-             data-aos="zoom-in"
-             onclick="abrirImagen(this.src)">
-
-        <img src="img/foto2.jpeg" data-aos="zoom-in" onclick="abrirImagen(this.src)">
-
-        <img src="img/foto3.jpeg" data-aos="zoom-in" onclick="abrirImagen(this.src)">
-
-        <img src="img/foto4.jpeg" data-aos="zoom-in" onclick="abrirImagen(this.src)">
-
-        <img src="img/foto5.jpeg" data-aos="zoom-in" onclick="abrirImagen(this.src)">
-
-        <img src="img/foto6.jpeg" data-aos="zoom-in" onclick="abrirImagen(this.src)">
-
-        <img src="img/foto7.jpeg" data-aos="zoom-in" onclick="abrirImagen(this.src)">
-
-        <img src="img/foto8.jpeg" data-aos="zoom-in" onclick="abrirImagen(this.src)">
-
-        <img src="img/foto9.jpeg" data-aos="zoom-in" onclick="abrirImagen(this.src)">
-
-        <img src="img/foto10.jpeg" data-aos="zoom-in" onclick="abrirImagen(this.src)">
-
-        <img src="img/foto11.jpeg" data-aos="zoom-in" onclick="abrirImagen(this.src)">
-
-        <img src="img/foto12.jpeg" data-aos="zoom-in" onclick="abrirImagen(this.src)">
-
-    </div>
-
-</section>
-
-<!-- IMAGEN EXPANDIDA -->
-
-<div id="visor" class="visor" onclick="cerrarImagen()">
-
-    <span class="cerrar">
-        ✖
-    </span>
-
-    <img
-        id="imagenExpandida"
-        onclick="event.stopPropagation()"
-    >
-
-</div>
-
-<!-- FOOTER --><footer class="footer" id="contactar">
-
-    <div class="footer-contenido">
-
-        <!-- LOGO -->
-
-        <img
-            src="logosinfondo.png"
-            alt="Logo ASD"
-            class="footer-logo"
-        >
-
-
-        <p class="footer-texto">
-            Soluciones profesionales en seguridad digital, videovigilancia y energía solar 
-            para hogares y empresas en Baja California. Especialistas en cámaras de seguridad, 
-            control de acceso, automatización y paneles solares.
-        </p>
-
-        <!-- COLUMNAS -->
-
-        <div class="footer-grid">
-
-            <!-- SERVICIOS -->
-
-            <div class="footer-columna">
-
-                <h4>Servicios</h4>
-
-                <p>🏢 Residencial</p>
-
-                <p>🌎 Comercial</p>
-
-                <p>🔧 Soporte Técnico</p>
-
-            </div>
-
-            <!-- CONTACTO -->
-
-            <div class="footer-columna">
-
-                <h4>Contacto</h4>
-
-                <p>
-                    <a
-                        href="https://wa.me/526642042871"
-                        target="_blank"
-                        class="link-red"
-                    >
-                        📱 WhatsApp
-                    </a>
-                </p>
-
-                <p>
-                    <a
-                        href="mailto:microplazita@gmail.com"
-                        class="link-red"
-                    >
-                        📧 Correo
-                    </a>
-                </p>
-
-                <p>
-                    📍 Baja California
-                </p>
-
-            </div>
-
-        </div>
-
-        <!-- COPYRIGHT -->
-
-        <p class="copyright">
-            © 2026 ASD —
-            Todos los derechos reservados
-        </p>
-
-    </div>
-
-</footer>
-
-    <a
-    href="https://wa.me/526642042871?text=Hola,%20me%20gustaría%20recibir%20información."
-    class="whatsapp"
-    target="_blank"
->
-
-    <img
-        src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
-        alt="WhatsApp"
-    >
-
-</a>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-<script>
-    AOS.init();
-</script>
-
-    <script src="app.js"></script>
-
-    
+    <section class="trust-strip">
+      <span>VIDEOVIGILANCIA</span><i></i><span>CONTROL DE ACCESO</span><i></i><span>REDES</span><i></i><span>AUTOMATIZACIÓN</span><i></i><span>ENERGÍA SOLAR</span>
+    </section>
+
+    <section class="solutions section" id="soluciones">
+      <div class="section-top reveal">
+        <div><p class="eyebrow">Un solo equipo. Todo conectado.</p><h2>Tecnología que trabaja<br>en conjunto.</h2></div>
+        <p>Diseñamos ecosistemas completos, fáciles de usar y preparados para crecer contigo.</p>
+      </div>
+      <div class="solution-grid">
+        <article class="solution-card large reveal"><div class="card-index">01</div><div class="card-content"><p>Protección visual</p><h3>Videovigilancia inteligente</h3><span>Cámaras para hogar · CCTV empresarial · monitoreo multisucursal · acceso remoto</span></div><div class="signal"><i></i><i></i><i></i></div></article>
+        <article class="solution-card reveal"><div class="card-index">02</div><div class="card-content"><p>Entradas seguras</p><h3>Control de acceso</h3><span>Videoporteros, alarmas y gestión de accesos para saber siempre quién entra.</span></div></article>
+        <article class="solution-card reveal"><div class="card-index">03</div><div class="card-content"><p>Infraestructura</p><h3>Redes y cableado</h3><span>Cableado estructurado y conectividad estable para todos tus sistemas.</span></div></article>
+        <article class="solution-card energy reveal"><div class="card-index">04</div><div class="card-content"><p>Eficiencia</p><h3>Energía solar</h3><span>Instalación y mantenimiento de paneles solares para reducir costos.</span></div><span class="sun-mark">☼</span></article>
+        <article class="solution-card reveal"><div class="card-index">05</div><div class="card-content"><p>Continuidad</p><h3>Soporte técnico</h3><span>Diagnóstico, mantenimiento preventivo, reparación y configuración remota.</span></div></article>
+      </div>
+    </section>
+
+    <section class="method section" id="metodo">
+      <div class="method-image reveal"><img src="fondo-seguridad.png" alt="Sistema integral de seguridad digital ASD" loading="lazy"><div class="scan-line"></div></div>
+      <div class="method-content reveal">
+        <p class="eyebrow light">Precisión de principio a fin</p>
+        <h2>Un sistema diseñado alrededor de ti.</h2>
+        <p>No vendemos equipos aislados. Entendemos tu espacio, detectamos riesgos y construimos una solución clara, confiable y fácil de operar.</p>
+        <ol>
+          <li><span>01</span><div><strong>Diagnóstico</strong><small>Escuchamos tus necesidades y revisamos el espacio.</small></div></li>
+          <li><span>02</span><div><strong>Diseño</strong><small>Seleccionamos la tecnología adecuada para tu proyecto.</small></div></li>
+          <li><span>03</span><div><strong>Instalación</strong><small>Configuramos, probamos y te enseñamos a usar el sistema.</small></div></li>
+          <li><span>04</span><div><strong>Soporte</strong><small>Seguimos contigo para mantener todo funcionando.</small></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="benefits section">
+      <div class="section-title reveal"><p class="eyebrow">Confianza en cada conexión</p><h2>Protección sin<br>complicaciones.</h2></div>
+      <div class="benefit-list">
+        <article class="reveal"><span>01</span><h3>Control desde cualquier lugar</h3><p>Consulta cámaras y administra tus sistemas directamente desde tu celular.</p></article>
+        <article class="reveal"><span>02</span><h3>Tecnología actual</h3><p>Equipos modernos, correctamente configurados y listos para crecer.</p></article>
+        <article class="reveal"><span>03</span><h3>Atención personalizada</h3><p>Soluciones adaptadas a cada hogar, empresa y presupuesto.</p></article>
+        <article class="reveal"><span>04</span><h3>Respaldo técnico</h3><p>Acompañamiento, mantenimiento y respuesta cuando más lo necesitas.</p></article>
+      </div>
+    </section>
+
+    <section class="projects section" id="proyectos">
+      <div class="section-top reveal"><div><p class="eyebrow light">Energía integrada</p><h2>Proyectos solares<br>que reducen costos.</h2></div><p>Parte de nuestra solución integral incluye energía limpia para hogares y empresas de Baja California.</p></div>
+      <div class="project-grid">
+        <button type="button" class="project-card wide reveal" data-src="img/foto1.jpeg"><img src="img/foto1.jpeg" alt="Proyecto solar residencial ASD" loading="lazy"><span><small>Residencial</small>Instalación solar <b>↗</b></span></button>
+        <button type="button" class="project-card reveal" data-src="img/foto5.jpeg"><img src="img/foto5.jpeg" alt="Paneles solares instalados por ASD" loading="lazy"><span><small>Eficiencia</small>Energía limpia <b>↗</b></span></button>
+        <button type="button" class="project-card reveal" data-src="img/foto9.jpeg"><img src="img/foto9.jpeg" alt="Sistema de paneles solares ASD" loading="lazy"><span><small>Comercial</small>Solución a medida <b>↗</b></span></button>
+        <button type="button" class="project-card wide reveal" data-src="img/foto10.jpeg"><img src="img/foto10.jpeg" alt="Proyecto de energía solar en Baja California" loading="lazy"><span><small>Baja California</small>Proyecto terminado <b>↗</b></span></button>
+        <button type="button" class="project-card wide reveal" data-src="img/paneles-comercial-01.jpeg"><img src="img/paneles-comercial-01.jpeg" alt="Instalación comercial de paneles solares" loading="lazy"><span><small>Comercial</small>Sistema de gran capacidad <b>↗</b></span></button>
+        <button type="button" class="project-card reveal" data-src="img/paneles-residencial-01.jpeg"><img src="img/paneles-residencial-01.jpeg" alt="Instalación residencial sobre azotea" loading="lazy"><span><small>Residencial</small>Generación propia <b>↗</b></span></button>
+        <button type="button" class="project-card reveal" data-src="img/paneles-residencial-02.jpeg"><img src="img/paneles-residencial-02.jpeg" alt="Paneles solares sobre techo de teja" loading="lazy"><span><small>Integración</small>Diseño residencial <b>↗</b></span></button>
+        <button type="button" class="project-card wide reveal" data-src="img/tablero-solar-01.jpeg"><img src="img/tablero-solar-01.jpeg" alt="Tablero eléctrico de sistema solar" loading="lazy"><span><small>Ingeniería</small>Protección eléctrica <b>↗</b></span></button>
+        <button type="button" class="project-card reveal" data-src="img/paneles-residencial-03.jpeg"><img src="img/paneles-residencial-03.jpeg" alt="Arreglo de paneles solares terminado" loading="lazy"><span><small>Eficiencia</small>Proyecto terminado <b>↗</b></span></button>
+        <button type="button" class="project-card reveal" data-src="img/inversor-growatt-01.jpeg"><img src="img/inversor-growatt-01.jpeg" alt="Inversor Growatt instalado" loading="lazy"><span><small>Tecnología</small>Conversión inteligente <b>↗</b></span></button>
+        <button type="button" class="project-card wide reveal" data-src="img/estructura-solar-01.jpeg"><img src="img/estructura-solar-01.jpeg" alt="Estructura y cableado de paneles solares" loading="lazy"><span><small>Detalle técnico</small>Montaje profesional <b>↗</b></span></button>
+        <button type="button" class="project-card reveal" data-src="img/inversores-solares-01.jpeg"><img src="img/inversores-solares-01.jpeg" alt="Inversores solares instalados" loading="lazy"><span><small>Equipamiento</small>Inversores solares <b>↗</b></span></button>
+        <button type="button" class="project-card reveal" data-src="img/paneles-residencial-04.jpeg"><img src="img/paneles-residencial-04.jpeg" alt="Paneles solares en azotea residencial" loading="lazy"><span><small>Residencial</small>Energía confiable <b>↗</b></span></button>
+        <button type="button" class="project-card wide reveal" data-src="img/paneles-residencial-05.jpeg"><img src="img/paneles-residencial-05.jpeg" alt="Sistema solar con vista urbana" loading="lazy"><span><small>Baja California</small>Solución urbana <b>↗</b></span></button>
+        <button type="button" class="project-card reveal" data-src="img/paneles-residencial-06.jpeg"><img src="img/paneles-residencial-06.jpeg" alt="Sistema solar residencial de gran capacidad" loading="lazy"><span><small>Capacidad</small>Producción optimizada <b>↗</b></span></button>
+        <button type="button" class="project-card reveal" data-src="img/paneles-residencial-07.jpeg"><img src="img/paneles-residencial-07.jpeg" alt="Paneles bifaciales instalados" loading="lazy"><span><small>Innovación</small>Paneles bifaciales <b>↗</b></span></button>
+        <button type="button" class="project-card wide reveal" data-src="img/estructura-solar-02.jpeg"><img src="img/estructura-solar-02.jpeg" alt="Estructura elevada para paneles solares" loading="lazy"><span><small>Estructura</small>Instalación a la medida <b>↗</b></span></button>
+        <button type="button" class="project-card reveal" data-src="img/inversor-growatt-02.jpeg"><img src="img/inversor-growatt-02.jpeg" alt="Detalle de inversor solar Growatt" loading="lazy"><span><small>Monitoreo</small>Control de energía <b>↗</b></span></button>
+      </div>
+    </section>
+
+    <section class="contact section" id="contacto">
+      <div class="contact-copy reveal"><div class="status"><i></i> Estamos listos</div><h2>Protege lo que importa.<br><span>Empieza hoy.</span></h2><p>Cuéntanos sobre tu hogar o negocio. Te ayudaremos a encontrar una solución clara y adecuada.</p></div>
+      <div class="contact-card reveal">
+        <span>CONTACTO DIRECTO</span>
+        <a href="https://wa.me/526642042871?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n" target="_blank" rel="noopener"><small>WhatsApp</small><strong>664 204 2871</strong><b>↗</b></a>
+        <a href="mailto:microplazita@gmail.com"><small>Correo</small><strong>microplazita@gmail.com</strong><b>↗</b></a>
+        <p>Atención en Baja California</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><img src="LogoTitulo.png" alt="ASD Asesores en Seguridad Digital"><p>Seguridad · Redes · Automatización · Energía</p><div><a href="#soluciones">Soluciones</a><a href="#metodo">Proceso</a><a href="#proyectos">Proyectos</a></div><small>© 2026 ASD. Todos los derechos reservados.</small></footer>
+  <a class="floating-contact" href="https://wa.me/526642042871?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp"><span class="whatsapp-icon-wrap"><img src="img/whatsapp-icon.png" alt=""></span><span class="whatsapp-label">WhatsApp</span></a>
+  <dialog class="lightbox" id="lightbox"><button id="lightboxClose" type="button" aria-label="Cerrar">×</button><img id="lightboxImage" alt="Vista ampliada de proyecto ASD"></dialog>
+  <script src="i18n.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
