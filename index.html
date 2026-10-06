@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#03111f">
+  <link rel="preload" as="image" href="img/hero-security.webp" fetchpriority="high">
   <meta name="description" content="Seguridad digital, videovigilancia, automatización y energía solar en Baja California.">
   <title>ASD | Asesores en Seguridad Digital</title>
   <link rel="canonical" href="https://asdtijuana.com/">
@@ -31,7 +33,7 @@
   <link rel="stylesheet" href="refinements.css">
 </head>
 <body>
-  <nav class="navbar">
+  <nav class="navbar" aria-label="Navegación principal">
     <a class="brand" href="#inicio" aria-label="ASD, inicio"><img src="LogoTitulo.png" alt="ASD Asesores en Seguridad Digital"></a>
     <div class="nav-actions">
     <div class="nav-links" id="navLinks">
@@ -41,7 +43,7 @@
       <a class="nav-cta" href="https://wa.me/526642042871?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n" target="_blank" rel="noopener">Solicitar asesoría</a>
     </div>
     <button class="language-toggle" id="languageToggle" type="button" aria-label="Cambiar idioma a inglés"><span class="active">ES</span><i></i><span>EN</span></button>
-    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
     </div>
   </nav>
 
@@ -85,7 +87,7 @@
     </section>
 
     <section class="method section" id="metodo">
-      <div class="method-image reveal"><img src="fondo-seguridad.png" alt="Sistema integral de seguridad digital ASD" loading="lazy"><div class="scan-line"></div></div>
+      <div class="method-image reveal"><img src="img/hero-security.webp" alt="Sistema integral de seguridad digital ASD" loading="lazy" width="1536" height="1024" decoding="async"><div class="scan-line"></div></div>
       <div class="method-content reveal">
         <p class="eyebrow light">Precisión de principio a fin</p>
         <h2>Un sistema diseñado alrededor de ti.</h2>
@@ -112,24 +114,24 @@
     <section class="projects section" id="proyectos">
       <div class="section-top reveal"><div><p class="eyebrow light">Energía integrada</p><h2>Proyectos solares<br>que reducen costos.</h2></div><p>Parte de nuestra solución integral incluye energía limpia para hogares y empresas de Baja California.</p></div>
       <div class="project-grid">
-        <button type="button" class="project-card wide reveal" data-src="img/foto1.jpeg"><img src="img/foto1.jpeg" alt="Proyecto solar residencial ASD" loading="lazy"><span><small>Residencial</small>Instalación solar <b>↗</b></span></button>
-        <button type="button" class="project-card reveal" data-src="img/foto5.jpeg"><img src="img/foto5.jpeg" alt="Paneles solares instalados por ASD" loading="lazy"><span><small>Eficiencia</small>Energía limpia <b>↗</b></span></button>
-        <button type="button" class="project-card reveal" data-src="img/foto9.jpeg"><img src="img/foto9.jpeg" alt="Sistema de paneles solares ASD" loading="lazy"><span><small>Comercial</small>Solución a medida <b>↗</b></span></button>
-        <button type="button" class="project-card wide reveal" data-src="img/foto10.jpeg"><img src="img/foto10.jpeg" alt="Proyecto de energía solar en Baja California" loading="lazy"><span><small>Baja California</small>Proyecto terminado <b>↗</b></span></button>
-        <button type="button" class="project-card wide reveal" data-src="img/paneles-comercial-01.jpeg"><img src="img/paneles-comercial-01.jpeg" alt="Instalación comercial de paneles solares" loading="lazy"><span><small>Comercial</small>Sistema de gran capacidad <b>↗</b></span></button>
-        <button type="button" class="project-card reveal" data-src="img/paneles-residencial-01.jpeg"><img src="img/paneles-residencial-01.jpeg" alt="Instalación residencial sobre azotea" loading="lazy"><span><small>Residencial</small>Generación propia <b>↗</b></span></button>
-        <button type="button" class="project-card reveal" data-src="img/paneles-residencial-02.jpeg"><img src="img/paneles-residencial-02.jpeg" alt="Paneles solares sobre techo de teja" loading="lazy"><span><small>Integración</small>Diseño residencial <b>↗</b></span></button>
-        <button type="button" class="project-card wide reveal" data-src="img/tablero-solar-01.jpeg"><img src="img/tablero-solar-01.jpeg" alt="Tablero eléctrico de sistema solar" loading="lazy"><span><small>Ingeniería</small>Protección eléctrica <b>↗</b></span></button>
-        <button type="button" class="project-card reveal" data-src="img/paneles-residencial-03.jpeg"><img src="img/paneles-residencial-03.jpeg" alt="Arreglo de paneles solares terminado" loading="lazy"><span><small>Eficiencia</small>Proyecto terminado <b>↗</b></span></button>
-        <button type="button" class="project-card reveal" data-src="img/inversor-growatt-01.jpeg"><img src="img/inversor-growatt-01.jpeg" alt="Inversor Growatt instalado" loading="lazy"><span><small>Tecnología</small>Conversión inteligente <b>↗</b></span></button>
-        <button type="button" class="project-card wide reveal" data-src="img/estructura-solar-01.jpeg"><img src="img/estructura-solar-01.jpeg" alt="Estructura y cableado de paneles solares" loading="lazy"><span><small>Detalle técnico</small>Montaje profesional <b>↗</b></span></button>
-        <button type="button" class="project-card reveal" data-src="img/inversores-solares-01.jpeg"><img src="img/inversores-solares-01.jpeg" alt="Inversores solares instalados" loading="lazy"><span><small>Equipamiento</small>Inversores solares <b>↗</b></span></button>
-        <button type="button" class="project-card reveal" data-src="img/paneles-residencial-04.jpeg"><img src="img/paneles-residencial-04.jpeg" alt="Paneles solares en azotea residencial" loading="lazy"><span><small>Residencial</small>Energía confiable <b>↗</b></span></button>
-        <button type="button" class="project-card wide reveal" data-src="img/paneles-residencial-05.jpeg"><img src="img/paneles-residencial-05.jpeg" alt="Sistema solar con vista urbana" loading="lazy"><span><small>Baja California</small>Solución urbana <b>↗</b></span></button>
-        <button type="button" class="project-card reveal" data-src="img/paneles-residencial-06.jpeg"><img src="img/paneles-residencial-06.jpeg" alt="Sistema solar residencial de gran capacidad" loading="lazy"><span><small>Capacidad</small>Producción optimizada <b>↗</b></span></button>
-        <button type="button" class="project-card reveal" data-src="img/paneles-residencial-07.jpeg"><img src="img/paneles-residencial-07.jpeg" alt="Paneles bifaciales instalados" loading="lazy"><span><small>Innovación</small>Paneles bifaciales <b>↗</b></span></button>
-        <button type="button" class="project-card wide reveal" data-src="img/estructura-solar-02.jpeg"><img src="img/estructura-solar-02.jpeg" alt="Estructura elevada para paneles solares" loading="lazy"><span><small>Estructura</small>Instalación a la medida <b>↗</b></span></button>
-        <button type="button" class="project-card reveal" data-src="img/inversor-growatt-02.jpeg"><img src="img/inversor-growatt-02.jpeg" alt="Detalle de inversor solar Growatt" loading="lazy"><span><small>Monitoreo</small>Control de energía <b>↗</b></span></button>
+        <button type="button" class="project-card wide reveal" data-src="img/foto1.jpeg"><img src="img/foto1.jpeg" alt="Proyecto solar residencial ASD" loading="lazy" width="1280" height="720" decoding="async"><span><small>Residencial</small>Instalación solar <b>↗</b></span></button>
+        <button type="button" class="project-card reveal" data-src="img/foto5.jpeg"><img src="img/foto5.jpeg" alt="Paneles solares instalados por ASD" loading="lazy" width="1280" height="720" decoding="async"><span><small>Eficiencia</small>Energía limpia <b>↗</b></span></button>
+        <button type="button" class="project-card reveal" data-src="img/foto9.jpeg"><img src="img/foto9.jpeg" alt="Sistema de paneles solares ASD" loading="lazy" width="1992" height="1123" decoding="async"><span><small>Comercial</small>Solución a medida <b>↗</b></span></button>
+        <button type="button" class="project-card wide reveal" data-src="img/foto10.jpeg"><img src="img/foto10.jpeg" alt="Proyecto de energía solar en Baja California" loading="lazy" width="2000" height="1139" decoding="async"><span><small>Baja California</small>Proyecto terminado <b>↗</b></span></button>
+        <button type="button" class="project-card wide reveal" data-src="img/paneles-comercial-01.jpeg"><img src="img/paneles-comercial-01.jpeg" alt="Instalación comercial de paneles solares" loading="lazy" width="1600" height="1200" decoding="async"><span><small>Comercial</small>Sistema de gran capacidad <b>↗</b></span></button>
+        <button type="button" class="project-card reveal" data-src="img/paneles-residencial-01.jpeg"><img src="img/paneles-residencial-01.jpeg" alt="Instalación residencial sobre azotea" loading="lazy" width="1600" height="1200" decoding="async"><span><small>Residencial</small>Generación propia <b>↗</b></span></button>
+        <button type="button" class="project-card reveal" data-src="img/paneles-residencial-02.jpeg"><img src="img/paneles-residencial-02.jpeg" alt="Paneles solares sobre techo de teja" loading="lazy" width="1200" height="1600" decoding="async"><span><small>Integración</small>Diseño residencial <b>↗</b></span></button>
+        <button type="button" class="project-card wide reveal" data-src="img/tablero-solar-01.jpeg"><img src="img/tablero-solar-01.jpeg" alt="Tablero eléctrico de sistema solar" loading="lazy" width="1600" height="1200" decoding="async"><span><small>Ingeniería</small>Protección eléctrica <b>↗</b></span></button>
+        <button type="button" class="project-card reveal" data-src="img/paneles-residencial-03.jpeg"><img src="img/paneles-residencial-03.jpeg" alt="Arreglo de paneles solares terminado" loading="lazy" width="1600" height="1200" decoding="async"><span><small>Eficiencia</small>Proyecto terminado <b>↗</b></span></button>
+        <button type="button" class="project-card reveal" data-src="img/inversor-growatt-01.jpeg"><img src="img/inversor-growatt-01.jpeg" alt="Inversor Growatt instalado" loading="lazy" width="1200" height="1600" decoding="async"><span><small>Tecnología</small>Conversión inteligente <b>↗</b></span></button>
+        <button type="button" class="project-card wide reveal" data-src="img/estructura-solar-01.jpeg"><img src="img/estructura-solar-01.jpeg" alt="Estructura y cableado de paneles solares" loading="lazy" width="1600" height="1200" decoding="async"><span><small>Detalle técnico</small>Montaje profesional <b>↗</b></span></button>
+        <button type="button" class="project-card reveal" data-src="img/inversores-solares-01.jpeg"><img src="img/inversores-solares-01.jpeg" alt="Inversores solares instalados" loading="lazy" width="1200" height="1600" decoding="async"><span><small>Equipamiento</small>Inversores solares <b>↗</b></span></button>
+        <button type="button" class="project-card reveal" data-src="img/paneles-residencial-04.jpeg"><img src="img/paneles-residencial-04.jpeg" alt="Paneles solares en azotea residencial" loading="lazy" width="1600" height="1200" decoding="async"><span><small>Residencial</small>Energía confiable <b>↗</b></span></button>
+        <button type="button" class="project-card wide reveal" data-src="img/paneles-residencial-05.jpeg"><img src="img/paneles-residencial-05.jpeg" alt="Sistema solar con vista urbana" loading="lazy" width="1600" height="1200" decoding="async"><span><small>Baja California</small>Solución urbana <b>↗</b></span></button>
+        <button type="button" class="project-card reveal" data-src="img/paneles-residencial-06.jpeg"><img src="img/paneles-residencial-06.jpeg" alt="Sistema solar residencial de gran capacidad" loading="lazy" width="1600" height="1200" decoding="async"><span><small>Capacidad</small>Producción optimizada <b>↗</b></span></button>
+        <button type="button" class="project-card reveal" data-src="img/paneles-residencial-07.jpeg"><img src="img/paneles-residencial-07.jpeg" alt="Paneles bifaciales instalados" loading="lazy" width="1600" height="1200" decoding="async"><span><small>Innovación</small>Paneles bifaciales <b>↗</b></span></button>
+        <button type="button" class="project-card wide reveal" data-src="img/estructura-solar-02.jpeg"><img src="img/estructura-solar-02.jpeg" alt="Estructura elevada para paneles solares" loading="lazy" width="1600" height="1200" decoding="async"><span><small>Estructura</small>Instalación a la medida <b>↗</b></span></button>
+        <button type="button" class="project-card reveal" data-src="img/inversor-growatt-02.jpeg"><img src="img/inversor-growatt-02.jpeg" alt="Detalle de inversor solar Growatt" loading="lazy" width="1200" height="1600" decoding="async"><span><small>Monitoreo</small>Control de energía <b>↗</b></span></button>
       </div>
     </section>
 
@@ -145,7 +147,7 @@
   </main>
 
   <footer class="footer"><img src="LogoTitulo.png" alt="ASD Asesores en Seguridad Digital"><p>Seguridad · Redes · Automatización · Energía</p><div><a href="#soluciones">Soluciones</a><a href="#metodo">Proceso</a><a href="#proyectos">Proyectos</a></div><small>© 2026 ASD. Todos los derechos reservados.</small></footer>
-  <a class="floating-contact" href="https://wa.me/526642042871?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp"><span class="whatsapp-icon-wrap"><img src="img/whatsapp-icon.png" alt=""></span><span class="whatsapp-label">WhatsApp</span></a>
+  <a class="floating-contact" href="https://wa.me/526642042871?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp"><span class="whatsapp-icon-wrap"><img src="img/whatsapp-logo.webp" alt="" width="192" height="192" decoding="async"></span><span class="whatsapp-label">WhatsApp</span></a>
   <dialog class="lightbox" id="lightbox"><button id="lightboxClose" type="button" aria-label="Cerrar">×</button><img id="lightboxImage" alt="Vista ampliada de proyecto ASD"></dialog>
   <script src="i18n.js"></script>
   <script src="app.js"></script>

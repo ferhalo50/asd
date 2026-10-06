@@ -63,11 +63,15 @@
     toggle.setAttribute('aria-label', isEnglish ? 'Cambiar idioma a español' : 'Switch language to English');
     toggle.querySelectorAll('span').forEach(span => span.classList.toggle('active', span.textContent.toLowerCase() === language));
     updateContactLinks(language);
+    document.querySelector('.floating-contact').setAttribute('aria-label', isEnglish ? 'Contact us on WhatsApp' : 'Contactar por WhatsApp');
+    document.querySelector('#menuToggle').setAttribute('aria-label', isEnglish ? 'Toggle navigation menu' : 'Abrir o cerrar menú');
+    document.querySelector('#lightboxClose').setAttribute('aria-label', isEnglish ? 'Close image' : 'Cerrar imagen');
     try { localStorage.setItem('asd-language', language); } catch (_) {}
+    document.dispatchEvent(new CustomEvent('languagechange', { detail: { language } }));
   }
 
   toggle.addEventListener('click', () => setLanguage(window.currentLanguage === 'es' ? 'en' : 'es'));
   let saved = 'es';
   try { saved = localStorage.getItem('asd-language') || 'es'; } catch (_) {}
-  setLanguage(saved);
+  setLanguage(saved === 'en' ? 'en' : 'es');
 })();
